@@ -9,8 +9,17 @@ const app_routes: Routes = [
   {
     path: '',
     redirectTo: '/admin',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
+
+  // {
+  //   path: 'admin',
+  //   loadChildren: () =>
+  //     import('./layouts/admin-layout/admin-layout.module').then(
+  //       (m) => m.AdminLayoutModule
+  //     ),
+  // },
+
   { path: '**', component: PageNotFoundComponent },
   // {
   //   path: 'auth',
@@ -22,8 +31,8 @@ const app_routes: Routes = [
   imports: [
     RouterModule.forRoot(app_routes),
     AdminLayoutRoutingModule,
-    AuthLayoutRoutingModule
+    AuthLayoutRoutingModule,
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -4,11 +4,18 @@ import { AdminLayoutComponent } from './admin-layout.component';
 
 const admin_routes: Routes = [
   {
-    path: '',
+    path: 'admin',
     component: AdminLayoutComponent,
-    loadChildren: () => import('./admin-layout.routes').then( (m) => m.AdminRoutesModule )
-  }
-]
+    loadChildren: () =>
+      import('./admin-layout.routes').then((m) => m.AdminRoutesModule),
+  },
+  // {
+  //   path: '/admin',
+  //   component: AdminLayoutComponent,
+  //   loadChildren: () =>
+  //     import('./admin-layout.routes').then((m) => m.AdminRoutesModule),
+  // },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(admin_routes)],
@@ -16,4 +23,4 @@ const admin_routes: Routes = [
   declarations: [],
   providers: [],
 })
-export class AdminLayoutRoutingModule { }
+export class AdminLayoutRoutingModule {}

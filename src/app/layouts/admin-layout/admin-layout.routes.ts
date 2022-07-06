@@ -3,18 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { QuotesComponent } from './quotes/quotes.component';
 
-
 const admin_child_routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
   },
   {
     path: 'quotes',
-    component: QuotesComponent
-  }
-]
-
+    component: QuotesComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(admin_child_routes)],
@@ -22,4 +24,4 @@ const admin_child_routes: Routes = [
   declarations: [],
   providers: [],
 })
-export class AdminRoutesModule { }
+export class AdminRoutesModule {}

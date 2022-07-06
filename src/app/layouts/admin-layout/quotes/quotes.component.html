@@ -1,1 +1,76 @@
-<p>quotes works!</p>
+<h1 class="text-success">Tipos de documento</h1>
+
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col col-md-6 col-sm-4">
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">
+            <img src="./assets/svg/search.svg" alt="" />
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+      </div>
+
+      <div class="col col-md-3 col-sm-3">
+        <button class="btn btn-success">
+          Buscar
+          <img src="./assets/svg/search.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="col col-md-3 col-sm-3">
+        <button class="btn btn-success">
+          <img src="./assets/svg/plus.svg" alt="" />
+          Nuevo tipo de documento
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<table class="table">
+  <thead class="table-success table-bordered">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of [1, 1, 1, 1, 1]">
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr *ngFor="let item of [1, 1, 1, 1, 1]">
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
