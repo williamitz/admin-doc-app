@@ -1,6 +1,6 @@
 export enum EIcon {
   success = 'success',
-  warning = 'success',
+  warning = 'warning',
   info = 'info',
   error = 'error',
 }

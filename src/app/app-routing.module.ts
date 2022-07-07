@@ -5,6 +5,7 @@ import { AuthLayoutRoutingModule } from './layouts/auth-layout/auth-layout-routi
 // import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfigLayoutRoutingModule } from './layouts/config-layout/config-layout-routing.module';
+import { QuotesLayoutRoutingModule } from './layouts/quotes-layout/quotes-layout-routing.module';
 
 const app_routes: Routes = [
   {
@@ -34,6 +35,7 @@ const app_routes: Routes = [
     AdminLayoutRoutingModule,
     AuthLayoutRoutingModule,
     ConfigLayoutRoutingModule,
+    QuotesLayoutRoutingModule,
   ],
   exports: [RouterModule],
 })

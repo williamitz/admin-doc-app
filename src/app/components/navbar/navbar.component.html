@@ -45,8 +45,35 @@
           </ul>
         </li>
 
-        <li class="nav-item ml-1">
-          <a class="nav-link" href="#">Citas</a>
+        <li class="nav-item ml-1 dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Citas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['/quotes/visitantes']"
+                routerLinkActive="active"
+                >Tipos de visitante</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                [routerLink]="['/quotes/nuevo-visitante']"
+                routerLinkActive="active"
+                >Crear Tipo de visitante</a
+              >
+            </li>
+          </ul>
         </li>
 
         <li class="nav-item ml-1 dropdown">

@@ -1,17 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
-
-import { EIcon } from 'src/app/interfaces/AlertIcon.interface';
 import { UiService } from '../../../services/ui.service';
+import { EIcon } from '../../../interfaces/AlertIcon.interface';
 
 @Component({
-  selector: 'app-type-docfrm',
-  templateUrl: './type-docfrm.component.html',
-  styleUrls: ['./type-docfrm.component.scss'],
+  selector: 'app-visitor-typefrm',
+  templateUrl: './visitor-typefrm.component.html',
+  styleUrls: ['./visitor-typefrm.component.scss'],
 })
-export class TypeDocfrmComponent implements OnInit {
-  duration$?: Subscription;
-
+export class VisitorTypefrmComponent implements OnInit {
   constructor(private _ui: UiService) {}
 
   ngOnInit(): void {}

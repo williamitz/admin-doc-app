@@ -7,6 +7,7 @@ import { AuthLayoutModule } from './layouts/auth-layout/auth-layout.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfigLayoutModule } from './layouts/config-layout/config-layout.module';
+import { QuotesLayoutModule } from './layouts/quotes-layout/quotes-layout.module';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
@@ -16,6 +17,7 @@ import { ConfigLayoutModule } from './layouts/config-layout/config-layout.module
     AuthLayoutModule,
     AdminLayoutModule,
     ConfigLayoutModule,
+    QuotesLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
