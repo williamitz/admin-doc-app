@@ -4,6 +4,7 @@ import { AdminLayoutRoutingModule } from './layouts/admin-layout/admin-layout-ro
 import { AuthLayoutRoutingModule } from './layouts/auth-layout/auth-layout-routing.module';
 // import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ConfigLayoutRoutingModule } from './layouts/config-layout/config-layout-routing.module';
 
 const app_routes: Routes = [
   {
@@ -32,6 +33,7 @@ const app_routes: Routes = [
     RouterModule.forRoot(app_routes),
     AdminLayoutRoutingModule,
     AuthLayoutRoutingModule,
+    ConfigLayoutRoutingModule,
   ],
   exports: [RouterModule],
 })

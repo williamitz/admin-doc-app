@@ -4,13 +4,14 @@ import { RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './admin-layout.component';
 import { HomeComponent } from './home/home.component';
 import { QuotesComponent } from './quotes/quotes.component';
-import { ASharedModule } from './shared/shared.module';
+
 import { CommonModule } from '@angular/common';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   declarations: [AdminLayoutComponent, HomeComponent, QuotesComponent],
 
-  imports: [CommonModule, RouterModule, ASharedModule],
+  imports: [CommonModule, RouterModule, ComponentsModule],
 
   providers: [],
 })
