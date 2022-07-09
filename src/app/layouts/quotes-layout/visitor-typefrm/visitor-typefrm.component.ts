@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UiService } from '../../../services/ui.service';
-import { EIcon } from '../../../interfaces/AlertIcon.interface';
+import { EIcon } from '../../../interfaces/alert_icon.interface';
 
 @Component({
   selector: 'app-visitor-typefrm',

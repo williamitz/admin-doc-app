@@ -2,8 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { EMode } from '../app/interfaces/app_mode.enum';
+const MODE = EMode.dev;
+
 export const environment = {
-  production: false
+  production: false,
+  segurity_server: MODE == EMode.dev ? 'https://acd-api-seguridad.herokuapp.com/v1' : 'http://localhost:3000',
+  admin_server: MODE == EMode.dev ? 'https://acd-api-administracion.herokuapp.com/v1' : 'http://localhost:3000',
+
 };
 
 /*

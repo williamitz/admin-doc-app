@@ -8,18 +8,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfigLayoutModule } from './layouts/config-layout/config-layout.module';
 import { QuotesLayoutModule } from './layouts/quotes-layout/quotes-layout.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     AuthLayoutModule,
     AdminLayoutModule,
     ConfigLayoutModule,
     QuotesLayoutModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

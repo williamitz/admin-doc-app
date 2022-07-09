@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import Swal, { SweetAlertResult } from 'sweetalert2';
-import { EIcon } from '../interfaces/AlertIcon.interface';
+import { EIcon } from '../interfaces/alert_icon.interface';
 
 @Injectable({ providedIn: 'root' })
 export class UiService {

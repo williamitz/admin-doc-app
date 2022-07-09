@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { EIcon } from 'src/app/interfaces/AlertIcon.interface';
+import { EIcon } from 'src/app/interfaces/alert_icon.interface';
 import { UiService } from '../../../services/ui.service';
 
 @Component({
