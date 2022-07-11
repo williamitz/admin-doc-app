@@ -6,6 +6,7 @@ import { AuthLayoutRoutingModule } from './layouts/auth-layout/auth-layout-routi
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ConfigLayoutRoutingModule } from './layouts/config-layout/config-layout-routing.module';
 import { QuotesLayoutRoutingModule } from './layouts/quotes-layout/quotes-layout-routing.module';
+import { SegurityLayoutRoutingModule } from './layouts/segurity-layout/segurity-layout-routing.module';
 
 const app_routes: Routes = [
   {
@@ -36,6 +37,7 @@ const app_routes: Routes = [
     AuthLayoutRoutingModule,
     ConfigLayoutRoutingModule,
     QuotesLayoutRoutingModule,
+    SegurityLayoutRoutingModule
   ],
   exports: [RouterModule],
 })

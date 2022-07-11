@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { AdminLayoutModule } from './layouts/admin-layout/admin-layout.module';
-import { AuthLayoutModule } from './layouts/auth-layout/auth-layout.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+import { AdminLayoutModule } from './layouts/admin-layout/admin-layout.module';
+import { AuthLayoutModule } from './layouts/auth-layout/auth-layout.module';
 import { ConfigLayoutModule } from './layouts/config-layout/config-layout.module';
 import { QuotesLayoutModule } from './layouts/quotes-layout/quotes-layout.module';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SegurityLayoutModule } from './layouts/segurity-layout/segurity-layout.module';
+
 import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
@@ -21,6 +24,7 @@ import { InterceptorService } from './services/interceptor.service';
     AdminLayoutModule,
     ConfigLayoutModule,
     QuotesLayoutModule,
+    SegurityLayoutModule
   ],
   providers: [
     {
